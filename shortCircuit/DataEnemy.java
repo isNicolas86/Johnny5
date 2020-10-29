@@ -7,11 +7,11 @@ public class DataEnemy {
     private double energy;
     private double velocity;
     private double heading;
-    private double coordinates;
+    private double[] coordinates;
     private double time;
 
 
-    public DataEnemy(double energy, double velocity, double heading, double coordinates, double time) {
+    public DataEnemy(double energy, double velocity, double heading, double[] coordinates, double time) {
         this.energy = energy;
         this.velocity = velocity;
         this.heading = heading;
@@ -31,7 +31,7 @@ public class DataEnemy {
         return heading;
     }
 
-    public double getCoordinates() {
+    public double[] getCoordinates() {
         return coordinates;
     }
 
